@@ -1,0 +1,20 @@
+.todos {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 60%;
+  }
+
+.todo {
+    padding-top: 5%;
+}
+
+.is-completed{ 
+    text-decoration: line-through red;
+}
+
+.input {
+    padding-left: 440px;
+}
+.is-not-completed{ 
+text-decoration: red;
+}
