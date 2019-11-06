@@ -2,7 +2,7 @@
   <div class="todos">
     <b-container class="bv-example-row">
       <b-row>
-        <div class="todo" v-for="todo in todoList" v-bind:key="todo.id">
+        <div class="todo" v-for="todo in allTodos" v-bind:key="todo.id">
           <b-col cols="8" md="auto" class="text-center">
             <b-card
               :title="todo.title"

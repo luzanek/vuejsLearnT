@@ -1,4 +1,5 @@
 import { Component, Vue } from "vue-property-decorator";
+import { mapGetters } from 'vuex'
 
 interface TodoItem {
     id: number;
@@ -7,8 +8,12 @@ interface TodoItem {
     description: string;
 }
 
-@Component({})
+@Component({
+    computed: mapGetters(['allTodos'])
+
+})
 export default class TodosList extends Vue {
+
     public markComplete(todo: TodoItem) {
         todo.completed = !todo.completed
     };
